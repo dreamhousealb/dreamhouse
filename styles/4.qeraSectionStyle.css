@@ -131,7 +131,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #Qera {
     font-size: 25px;
   }

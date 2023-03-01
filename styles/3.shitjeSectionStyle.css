@@ -129,7 +129,7 @@
   cursor: pointer;
 }
 
-@media (max-wdith: 768px) {
+@media (max-wdith: 800px) {
   #Shitje {
     font-size: 25px;
   }

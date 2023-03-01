@@ -64,7 +64,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .mainHeader .mainNav .mainLogo .logo {
     height: 60px;
   }

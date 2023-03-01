@@ -103,13 +103,13 @@
   border-radius: 15px;
 }
 
-@media (max-width:1000px){
+@media (max-width:1200px){
   .rrethNeshSection .motoContainer {
     flex-direction: column;
   }
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   #RrethNesh {
     font-size: 25px;
   }

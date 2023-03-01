@@ -1,0 +1,226 @@
+.shitjeSection {
+  padding-bottom: 50px;
+  padding-top: 25px;
+  background-color: #fff;
+}
+
+#Shitje {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 27.5px;
+}
+
+.shitjeSection .shitjeContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer {
+  padding: 30px;
+  margin: 10px;
+  border: 1px solid black;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .slideShow {
+  width: 360px;
+  height: 240px;
+  position: relative;
+}
+
+.shitjeSection .shitjeContainer .slideShow .slides0,
+.shitjeSection .shitjeContainer .slideShow .slides1,
+.shitjeSection .shitjeContainer .slideShow .slides2,
+.shitjeSection .shitjeContainer .slideShow .slides3 {
+  display: none;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .slideShow .slideImage {
+  width: 360px;
+  height: 240px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.shitjeSection
+  .shitjeContainer
+  .slideShowContainer
+  .slideShow
+  .slideImage.active {
+  z-index: 5;
+  position: fixed;
+  max-height: 80vh;
+  height: auto;
+  max-width: 80vw;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .slideShow .previous,
+.shitjeSection .shitjeContainer .slideShowContainer .slideShow .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #000000cc;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .slideShow .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .slideShow .previous:hover,
+.shitjeSection .shitjeContainer .slideShowContainer .slideShow .next:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .textDescription {
+  height: 100px;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .textDescription h3 {
+  text-align: center;
+  font-size: 17px;
+}
+
+.shitjeSection .shitjeContainer .slideShowContainer .textDescription ul li {
+  list-style: none;
+  font-size: 15px;
+}
+
+#modal {
+  display: none;
+  z-index: 4;
+  background-color: #000000cc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#modalButton {
+  display: none;
+  z-index: 4;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+@media (max-wdith: 768px) {
+  #Shitje {
+    font-size: 25px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer {
+    padding: 25px;
+    margin: 8px;
+    height: 450px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow {
+    width: 330px;
+    height: 220px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow .slideImage {
+    width: 330px;
+    height: 220px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .textDescription h3 {
+    font-size: 16px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .textDescription ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #Shitje {
+    font-size: 22.5px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer {
+    padding: 20px;
+    margin: 6px;
+    height: 400px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow {
+    width: 300px;
+    height: 200px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow .slideImage {
+    width: 300px;
+    height: 200px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .textDescription h3 {
+    font-size: 15px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .textDescription ul li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  #Shitje {
+    font-size: 20px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer {
+    padding: 15px;
+    margin: 4px;
+    height: 350px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow {
+    width: 270px;
+    height: 180px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow .slideImage {
+    width: 270px;
+    height: 180px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow .previous,
+  .shitjeSection .shitjeContainer .slideShowContainer .slideShow .next {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .textDescription h3 {
+    font-size: 14px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainer .textDescription ul li {
+    font-size: 12px;
+  }
+}

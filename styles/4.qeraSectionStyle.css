@@ -1,0 +1,227 @@
+.qeraSection {
+  background-color: #000;
+  padding-bottom: 50px;
+  padding-top: 25px;
+}
+
+#Qera {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 27.5px;
+  color: #fff;
+}
+
+.qeraSection .qeraContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ {
+  padding: 30px;
+  margin: 10px;
+  border: 1px solid white;
+  height: 475px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .slideShowQ {
+  width: 360px;
+  height: 240px;
+  position: relative;
+}
+
+.qeraSection .qeraContainer .slideShowQ .slides0Q,
+.qeraSection .qeraContainer .slideShowQ .slides1Q,
+.qeraSection .qeraContainer .slideShowQ .slides2Q,
+.qeraSection .qeraContainer .slideShowQ .slides3Q {
+  display: none;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .slideImageQ {
+  width: 360px;
+  height: 240px;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.qeraSection
+  .qeraContainer
+  .slideShowContainerQ
+  .slideShowQ
+  .slideImageQ.active {
+  z-index: 5;
+  position: fixed;
+  max-height: 80vh;
+  height: auto;
+  max-width: 80vw;
+  width: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .previousQ ,
+.qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .nextQ {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: #ffffffcc;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .nextQ {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .previousQ:hover,
+.qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .nextQ:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ {
+  height: 100px;
+  color: #fff;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ h3 {
+  text-align: center;
+  font-size: 17px;
+}
+
+.qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ ul li {
+  list-style: none;
+  font-size: 15px;
+}
+
+#modalQ {
+  display: none;
+  z-index: 4;
+  background-color: #000000cc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#modalButtonQ {
+  display: none;
+  z-index: 4;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  #Qera {
+    font-size: 25px;
+  }
+  .qeraSection .qeraContainer .slideShowContainerQ {
+    padding: 25px;
+    margin: 8px;
+    height: 450px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ {
+    width: 330px;
+    height: 220px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .slideImageQ {
+    width: 330px;
+    height: 220px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ h3 {
+    font-size: 16px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ ul li {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  #Qera {
+    font-size: 22.5px;
+  }
+
+  .shitjeSection .shitjeContainer .slideShowContainerQ {
+    padding: 20px;
+    margin: 6px;
+    height: 400px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ {
+    width: 300px;
+    height: 200px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .slideImageQ {
+    width: 300px;
+    height: 200px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ h3 {
+    font-size: 15px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ ul li {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  #Qera {
+    font-size: 20px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ {
+    padding: 15px;
+    margin: 4px;
+    height: 350px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ {
+    width: 270px;
+    height: 180px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .slideImageQ {
+    width: 270px;
+    height: 180px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .previousQ,
+  .qeraSection .qeraContainer .slideShowContainerQ .slideShowQ .nextQ {
+    padding: 12px;
+    font-size: 12px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ h3 {
+    font-size: 14px;
+  }
+
+  .qeraSection .qeraContainer .slideShowContainerQ .textDescriptionQ ul li {
+    font-size: 12px;
+  }
+}

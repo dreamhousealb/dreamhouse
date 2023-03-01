@@ -1,0 +1,154 @@
+.mainHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  font-family: "Poppins", sans-serif;
+}
+
+.mainHeader .mainNav {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background-color: #000;
+}
+
+.mainHeader .mainNav .mainLogo {
+  display: flex;
+  align-items: center;
+}
+
+.mainHeader .mainNav .mainLogo .logo {
+  height: 70px;
+}
+
+.mainHeader .mainNav .mainLogo .logoText {
+  height: 20px;
+}
+
+.mainHeader .mainNav .navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 75px;
+}
+
+.mainHeader .mainNav .navMenu li {
+  list-style: none;
+}
+
+.mainHeader .mainNav .navMenu li .navLinks {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 0px 10px;
+}
+
+.mainHeader .mainNav .navMenu li .navLinks:hover {
+  color: #c7a03d;
+  transition: linear 0.3s;
+  border-right: 10px solid #c7a03d;
+  padding-left: 0;
+}
+
+.mainHeader .mainNav .navMenu li .navLinks:not(:hover) {
+  transition: linear 0.3s;
+  padding-left: 10px;
+  border-right: 0px solid #c7a03d;
+}
+
+.mainHeader .mainNav .hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mainHeader .mainNav .mainLogo .logo {
+    height: 60px;
+  }
+
+  .mainHeader .mainNav .mainLogo .logoText {
+    height: 17.5px;
+  }
+
+  .mainHeader .mainNav .navMenu {
+    position: fixed;
+    top: 75px;
+    right: -100%;
+    width: 100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: #000000dd;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .mainHeader .mainNav .navMenu.active {
+    right: 0;
+  }
+
+  .mainHeader .mainNav .navMenu li {
+    margin: 16px 0;
+  }
+
+  .mainHeader .mainNav .navMenu li .navLinks {
+    font-size: 14px;
+  }
+
+  .mainHeader .mainNav .hamburger {
+    display: block;
+  }
+
+  .mainHeader .mainNav .hamburger .bar {
+    background-color: #fff;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeader .mainNav .mainLogo .logo {
+    height: 50px;
+  }
+
+  .mainHeader .mainNav .mainLogo .logoText {
+    height: 15px;
+  }
+  .mainHeader .mainNav .navMenu li .navLinks {
+    font-size: 12px;
+  }
+  .mainHeader .mainNav .hamburger .bar {
+    width: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mainHeader .mainNav .mainLogo .logo {
+    height: 40px;
+  }
+  .mainHeader .mainNav .mainLogo .logoText {
+    height: 12.5px;
+  }
+  .mainHeader .mainNav .navMenu li .navLinks {
+    color: #fff;
+    font-size: 10px;
+  }
+}

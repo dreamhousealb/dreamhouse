@@ -114,9 +114,7 @@
     font-size: 25px;
   }
 
-  .rrethNeshSection .motoContainer {
-    flex-direction: column;
-  }
+
 
   .rrethNeshSection .motoContainer .rrethNeshText {
     width: 400px;
